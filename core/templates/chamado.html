@@ -1,0 +1,120 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.83.1">
+        <link rel="shortcut icon" href="{% static 'images/logo.png' %}"/>
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jQuery.js' %}"></script>
+        <title>Portal de Chamado</title>
+      </head>
+<body>
+  <!--style="background-color: rgba(60,179,113,1);"-->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0,141,90);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'images/logo.png' %}" width="50" height="50" class="d-inline-block align-top" alt="">
+      </a>
+      <a class="navbar-brand fw-bold text-white">Portal de Chamado</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      </div>
+      <div class="justify-content-end navbar-collapse collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <spam class="nav-link me-3 text-white fw-bold" href="#">Edson Magalhães</spam>
+        </ul>
+        <ul class="navbar-nav">
+          <a class="nav-link btn text-white my-2 px-5 me-2 fw-bold" href="{% url 'index' %}" style="background-color: rgb(0,89,57);">Sair</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container mt-5" style="width: 70%;">
+    <div class="d-flex justify-content-between mb-4">
+      <div>
+        <h2 class="fw-bold" style="color: rgba(0,141,90);">Novo Chamado</h2>
+      </div>
+      <div>
+        <a class="nav-link btn btn-space text-white px-2 me-2 fw-bold" href="{% url 'index' %}" style="background-color: rgb(0,89,57);">Meus Chamados</a>
+      </div>
+    </div>
+    <form class="needs-validation" enctype="multipart/form-data" novalidate method="POST" action="{% url 'index' %}">
+      {% csrf_token %}
+      <div class="form-group row pb-4">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Título</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" maxlength = "25" placeholder="Digite o título do chamado">
+        </div>
+        <div class="valid-tooltip">
+          Looks good!
+        </div>
+      </div>
+      <div class="form-group row pb-4">
+        <label for="textAreaExample1" class="col-sm-2 col-form-label">Descrição</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="textAreaExample1" rows="4" placeholder="Digite a descrição do chamado"></textarea>
+        </div> 
+      </div>
+      <fieldset class="form-group pb-4">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Prioridade</legend>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Baixa
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Media
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Alta
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+                Urgente
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row pb-4">
+        <label for="inputFile" class="col-sm-2 col-form-label">Anexar Arquivos</label>
+        <div class="col-sm-10">
+          <input type="file" class="form-control" id="inputFile" name="image[]" multiple="multiple">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn fw-bold text-white px-5 mt-4" style="background-color: rgb(0,89,57);">Gravar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <nav class="fixed-bottom">
+      <img src="{% static 'images/logo.png' %}" class="rounded float-end m-2" width="40" height="40" alt="10 Anos XOOPERNORTE">
+    </nav>
+  </footer>
+<script src="navbar.js"></script>
+</body>
+</html>

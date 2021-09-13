@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 6.3499998 6.3499998"
+   version="1.1"
+   id="svg360"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="emoji4.svg">
+  <defs
+     id="defs354" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="10.633327"
+     inkscape:cy="14.21619"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="743"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="true"
+     units="px" />
+  <metadata
+     id="metadata357">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-290.65)">
+    <g
+       id="g248"
+       transform="matrix(0.01240234,0,0,0.01240234,0.00206795,290.65104)"
+       style="fill:#ffffff">
+      <g
+         id="g187"
+         style="fill:#ffffff">
+        <g
+           id="g185"
+           style="fill:#ffffff">
+          <g
+             id="g183"
+             style="fill:#ffffff">
+            <path
+               id="path175"
+               d="M 256,0 C 114.615,0 0,114.615 0,256 0,397.385 114.615,512 256,512 397.385,512 512,397.385 512,256 512,114.615 397.385,0 256,0 Z m 0,480 C 132.288,480 32,379.712 32,256 32,132.288 132.288,32 256,32 379.712,32 480,132.288 480,256 480,379.712 379.712,480 256,480 Z"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+            <circle
+               id="circle177"
+               r="32"
+               cy="176"
+               cx="176"
+               style="fill:#ffffff" />
+            <circle
+               id="circle179"
+               r="32"
+               cy="176"
+               cx="336"
+               style="fill:#ffffff" />
+            <path
+               id="path181"
+               d="m 256,240 c -79.529,0 -144,64.471 -144,144 h 32 c 0,-61.856 50.144,-112 112,-112 61.856,0 112,50.144 112,112 h 32 C 400,304.471 335.529,240 256,240 Z"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff" />
+          </g>
+        </g>
+      </g>
+      <g
+         id="g189"
+         style="fill:#ffffff" />
+      <g
+         id="g191"
+         style="fill:#ffffff" />
+      <g
+         id="g193"
+         style="fill:#ffffff" />
+      <g
+         id="g195"
+         style="fill:#ffffff" />
+      <g
+         id="g197"
+         style="fill:#ffffff" />
+      <g
+         id="g199"
+         style="fill:#ffffff" />
+      <g
+         id="g201"
+         style="fill:#ffffff" />
+      <g
+         id="g203"
+         style="fill:#ffffff" />
+      <g
+         id="g205"
+         style="fill:#ffffff" />
+      <g
+         id="g207"
+         style="fill:#ffffff" />
+      <g
+         id="g209"
+         style="fill:#ffffff" />
+      <g
+         id="g211"
+         style="fill:#ffffff" />
+      <g
+         id="g213"
+         style="fill:#ffffff" />
+      <g
+         id="g215"
+         style="fill:#ffffff" />
+      <g
+         id="g217"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>

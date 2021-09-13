@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <!-- <link rel="shortcut icon" href="img/coopernorte-logo.png"/> -->
+    <link rel="shortcut icon" href="{% static 'images/coopernorte-logo.png' %}"/>
+    <title>Login - Portal de Chamado</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form method="POST">
+            {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}">
+        <img class="mb-4" src="{% static 'images/coopernorte-logo.png' %}" alt="" width="157.413" height="87">
+        <h1 class="h3 mb-3 fw-normal">Login - HelpDesk TI</h1>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInput" placeholder="Usuario">
+          <label for="floatingInput">Usuário</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+          <label for="floatingPassword">Senha</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-success" type="submit">Entrar</button>
+        <p class="mt-5 mb-3 text-muted">&copy; COOPERNORTE 2021</p>
+      </form>
+    </main>
+  </body>
+</html>

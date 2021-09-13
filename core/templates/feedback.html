@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}"/>
+    <title>HelpDesk</title>
+  </head>
+  <body>
+     
+    <div class="container-fluid bg-light">
+      <h1 class="text-center font-weight-bold text-success py-4">
+        Pesquisa de Satisfação - HelpDesk
+        <img src="{% static 'images/logo.png' %}" class="ms-5" width="50x" height="50px">
+      </h1>
+    </div>
+
+    <div class="container" style="width: 70%;">
+      <h4 class="py-4">Olá Edson Magalhães,</h4>
+      <h4 class="py-4">Como você avalia nosso atendimento?</h4>
+      <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-success btn-block my-2 px-4">
+            <img src="{% static 'images/excelente.svg' %}"> Excelente
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary btn-block my-2 px-5">
+            <img src="{% static 'images/bom.svg' %}"> Bom
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-info btn-block my-2 px-5 text-white">
+            <img src="{% static 'images/ruim.svg' %}"> Ruim
+          </button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-danger btn-block my-2 px-5">
+            <img src="{% static 'images/pessimo.svg' %}"> Péssimo
+          </button>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3"> 
+      <div class="row">
+        <div class="col-md-4 my-2">
+          <h5>Seu problema foi resolvido?</h5>
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-switch my-2">
+            <input type="radio" name="botao1" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Sim</label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-switch my-2">
+            <input type="radio" name="botao1" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Não</label>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3"> 
+      <div class="row">
+        <div class="col-md-4 my-2">
+          <h5>Em tempo hábil?</h5>
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-switch my-2">
+            <input type="radio" name="botao2" class="custom-control-input" id="customSwitch3">
+            <label class="custom-control-label" for="customSwitch3">Sim</label>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="custom-control custom-switch my-2">
+            <input type="radio" name="botao2" class="custom-control-input" id="customSwitch4">
+            <label class="custom-control-label" for="customSwitch4">Não</label>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-3 mb-3"> 
+      <h5>Pode avaliar os conhecimentos do técnico que lhe atendeu?</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1">
+        <label class="form-check-label" for="exampleRadios1">
+          Compreende o assunto
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+        <label class="form-check-label" for="exampleRadios2">
+          Demonstrou dúvidas sobre o mesmo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+        <label class="form-check-label" for="exampleRadios3">
+          Precisa se aprofundar melhor
+        </label>
+      </div>
+      <hr class="mt-3 mb-3"> 
+      <div class="form-group">
+        <h5>Deixe um comentário sobre esse atendimento:</h5>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-success my-4">Enviar Pesquisa</button>
+    </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
